@@ -1,6 +1,6 @@
 # Construcción automatizada de modelos 3D de árboles, a partir de datos LiDAR  🌳
 
-Se presenta una implementación en PyTorch de una red totalmente convolucional para la segmentación semántica de imágenes aéreas, utilizando la arquitectura SegNet, donde se busca evaluar el desempeño de esta red neuronal basada en una estructura simétrica de codificador–decodificador, la primera parte (codificador) comprime la información de la imagen, mientras que la segunda parte (decodificador) la reconstruye para producir el mapa segmentado.
+Este repositorio presenta una implementación completa de un flujo de trabajo automatizado para la construcción de modelos 3D de árboles a partir de datos LiDAR. El objetivo es generar representaciones geométricas del arbolado urbano en distintos Niveles de Detalle (LOD), mediante un proceso reproducible que integra clasificación, segmentación, depuración y modelado.
 
 ## 📁 Conjunto de datos
 
