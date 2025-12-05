@@ -1,4 +1,4 @@
-# Construcción automatizada de modelos 3D de árboles, a partir de datos LiDAR 
+# Construcción automatizada de modelos 3D de árboles, a partir de datos LiDAR  🌳
 
 Se presenta una implementación en PyTorch de una red totalmente convolucional para la segmentación semántica de imágenes aéreas, utilizando la arquitectura SegNet, donde se busca evaluar el desempeño de esta red neuronal basada en una estructura simétrica de codificador–decodificador, la primera parte (codificador) comprime la información de la imagen, mientras que la segunda parte (decodificador) la reconstruye para producir el mapa segmentado.
 
@@ -13,11 +13,11 @@ Para el desarrollo de este proyecto se emplean datos LiDAR provenientes del Actu
 
 ## 💻 Notebook
 
-Notebook Jupyter con el código fuente del proyecto, que inculye la carga de datos, preprocesamiento, entrenamiento SegNet, evaluación y generación de resultados.
+Se incluye un notebook Jupyter con el código fuente completo del proyecto, el cual permite reproducir el proceso completo de construcción automatizada de modelos 3D de árboles paso a paso.
 
 ## 📝 Documentos
 
-Se incluye un reporte en formato de artículo que describe la implementación, entrenamiento y evaluación de la arquitectura SegNet.
+Se incluye un reporte en formato de artículo que describe detalladamente la implementación, el procesamiento y la generación de modelos 3D de árboles a partir de datos LiDAR, incluyendo las etapas de clasificación, segmentación, depuración y construcción de los diferentes Niveles de Detalle (LOD).
 
 ## 🗺️ Resultados 
 
@@ -38,6 +38,10 @@ Para la visualización interactiva de los archivos generados en formato .cityjso
 🔗 https://ninja.cityjson.org/
 
 Además, se anexa un video que muestra el proceso de carga y visualización de cada archivo .cityjson, permitiendo observar de manera comparativa cómo se representan los árboles en cada Nivel de Detalle (LOD).
+
+## 🗃️ Salidas_procesamiento
+
+Esta carpeta contiene los productos intermedios generados durante las etapas de clasificación, segmentación, limpieza y extracción de parámetros morfométricos a partir de la nube de puntos LiDAR. Cada archivo corresponde a un paso específico dentro del flujo de trabajo que culmina con la creación de los modelos 3D en CityJSON.
 
 ## 🙌 Créditos
 
