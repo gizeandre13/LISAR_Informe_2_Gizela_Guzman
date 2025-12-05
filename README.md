@@ -1,1 +1,49 @@
-# LISAR_Informe_2_Gizela_Guzman
+# Construcción automatizada de modelos 3D de árboles, a partir de datos LiDAR 
+
+Se presenta una implementación en PyTorch de una red totalmente convolucional para la segmentación semántica de imágenes aéreas, utilizando la arquitectura SegNet, donde se busca evaluar el desempeño de esta red neuronal basada en una estructura simétrica de codificador–decodificador, la primera parte (codificador) comprime la información de la imagen, mientras que la segunda parte (decodificador) la reconstruye para producir el mapa segmentado.
+
+## 📁 Conjunto de datos
+
+Para el desarrollo de este proyecto se emplean datos LiDAR provenientes del Actueel Hoogtebestand Nederland (AHN3), disponibles públicamente en los Países Bajos. La nube de puntos AHN3 incluye una clasificación básica distribuida en cinco clases principales:
+- Sin clasificar
+- Terreno (suelo)
+- Edificaciones
+- Agua
+- Estructuras civiles
+
+## 💻 Notebook
+
+Notebook Jupyter con el código fuente del proyecto, que inculye la carga de datos, preprocesamiento, entrenamiento SegNet, evaluación y generación de resultados.
+
+## 📝 Documentos
+
+Se incluye un reporte en formato de artículo que describe la implementación, entrenamiento y evaluación de la arquitectura SegNet.
+
+## 🗺️ Resultados 
+
+Se incluyen cuatro archivos .cityjson que corresponden a los modelos 3D generados para cada Nivel de Detalle (LOD):
+
+LOD0 – Representación básica en planta
+
+LOD1 – Volúmenes extruidos
+
+LOD2 – Modelos paramétricos con copa y tronco diferenciados
+
+LOD3 – Modelos ajustados directamente a la nube de puntos
+
+Cada archivo refleja el resultado del modelamiento automatizado a partir de los datos LiDAR procesados en este proyecto.
+
+Para la visualización interactiva de los archivos generados en formato .cityjson, se utilizó la plataforma web CityJSON Ninja, disponible en:
+
+🔗 https://ninja.cityjson.org/
+
+Además, se anexa un video que muestra el proceso de carga y visualización de cada archivo .cityjson, permitiendo observar de manera comparativa cómo se representan los árboles en cada Nivel de Detalle (LOD).
+
+## 🙌 Créditos
+
+Este trabajo es una implementación de de la línea base presentada en [\"Automatic construction of 3D tree models in
+multiple levels of detail from airborne LiDAR data\"](https://repository.tudelft.nl/record/uuid:3e169fc7-5336-4742-ab9b-18c158637cfe), Geert Jan (Rob) de Groot, TU Delft - Architecture and the Built Environment, Master Thesis (2020).
+
+Repositorio Github: [\"TreeConstruction\"](https://github.com/RobbieG91/TreeConstruction/tree/master)
+
+
